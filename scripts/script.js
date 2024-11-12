@@ -19,3 +19,13 @@ function logout() {
         // An error happened.
       });
 }
+
+function insertNameFromFirestore(user) {
+  db.collection("users").doc(user.uid).get().then(userDoc => {
+      console.log(userDoc.data().name)
+      userName = userDoc.data().name;
+      console.log(userName)
+      document.getElementById("name-goes-here").innerHTML = userName;
+  })
+
+}
