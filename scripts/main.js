@@ -150,7 +150,7 @@ function displayCardsDynamically(collection) {
         })
 }
 
-displayCardsDynamically("hikes");  //input param is the name of the collection
+// displayCardsDynamically("hikes");  //input param is the name of the collection
 
 //-----------------------------------------------------------------------------
 // This function is called whenever the user clicks on the "bookmark" icon.
